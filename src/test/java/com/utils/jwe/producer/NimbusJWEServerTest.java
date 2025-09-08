@@ -7,8 +7,9 @@ import java.security.interfaces.RSAPublicKey;
 import org.junit.Test;
 
 import com.utils.jwe.PemUtils;
-import com.utils.jwe.consumer.ManualJWEClient;
-import com.utils.jwe.consumer.NimbusJWEClient;
+import com.utils.jwe.client.ManualJWEClient;
+import com.utils.jwe.client.NimbusJWEClient;
+import com.utils.jwe.server.NimbusJWEServer;
 
 public class NimbusJWEServerTest {
 

@@ -1,4 +1,4 @@
-package com.utils.jwe.consumer;
+package com.utils.jwe.client;
 
 import java.security.interfaces.RSAPublicKey;
 

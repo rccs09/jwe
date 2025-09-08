@@ -1,4 +1,4 @@
-package com.utils.jwe.producer;
+package com.utils.jwe.server;
 
 import java.security.interfaces.RSAPrivateKey;
 

@@ -1,4 +1,4 @@
-package com.utils.jwe.producer;
+package com.utils.jwe.server;
 
 import java.nio.charset.StandardCharsets;
 import java.security.interfaces.RSAPrivateKey;
@@ -18,36 +18,6 @@ import com.utils.jwe.PemUtils;
 public class ManualJWEServer {
 	// Tag de GCM es de 128 bits en JWE
     private static final int TAG_BITS = 128;
-    
-//    public static void main(String[] args) throws Exception {
-//    	String json = "{\"user\":\"roberto\",\"scope\":\"wallet\",\"iat\":1725340800}";
-//
-//        //Cargar la clave pública del Productor desde resources
-//        RSAPublicKey publicKey = PemUtils.loadPublicKeyFromResource("public.pem");
-//
-//        //Generar el JWE Compact “a mano”
-//        System.out.println("*** Token manual ***");
-//        String tokenManual = ManualJWEClient.generateCompactJWE_RSA_OAEP_A256GCM(json.getBytes(StandardCharsets.UTF_8), publicKey);
-//        System.out.println("=== Token manual ===");
-//        System.out.println(tokenManual);
-//        //decifro token manual
-//        String mensajeManual = decifrarManual(tokenManual);
-//        System.out.println("=== Payload descifrado ===");
-//        System.out.println(mensajeManual);
-//        
-//        
-//      //Generar el JWE Compact “Con Nimbus"
-//        System.out.println("*** Token con Nimbus ***");
-//        String token = NimbusJWEClient.generateJweWithNimbus(json.getBytes(StandardCharsets.UTF_8), publicKey);
-//        System.out.println("=== Token manual ===");
-//        System.out.println(token);
-//        //decifro token manual
-//		String mensaje = decifrarManual(token);
-//        System.out.println("=== Payload descifrado ===");
-//        System.out.println(mensaje);	
-//
-//        
-//    }
     
     public static String decript(String token) throws Exception  {
     	// 1) Cargar clave privada desde resources

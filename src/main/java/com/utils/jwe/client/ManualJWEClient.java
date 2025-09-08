@@ -1,4 +1,4 @@
-package com.utils.jwe.consumer;
+package com.utils.jwe.client;
 
 import java.nio.charset.StandardCharsets;
 import java.security.PublicKey;
